@@ -10,7 +10,11 @@ public class Principal {
             System.out.printf("%s convertido para %d", idade, idadeConvertida);
         } catch (NumberFormatException e) {
             ehNumerico = false;
-            System.out.printf("Erro ao converter %s para inteiro. Informe apenas números\n", idade);
+            System.out.printf("Erro ao converter '%s' para inteiro. Informe apenas números\n", idade);
+        } finally {
+            System.out.println("Fim da execução");
         }
+
+
     }
 }
